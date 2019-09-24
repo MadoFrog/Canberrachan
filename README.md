@@ -1,11 +1,11 @@
-Lainchan - A fork of vichan
+Madochan - A fork of Lainchan
 ========================================================
 
 About
 ------------
-Lainchan is a fork of [vichan](http://github.com/vichan-devel/vichan),
-a great imageboard package, actively building on it and adding a lot of features and other
-improvements.
+Madochan is a fork of [Lainchan](https://github.com/lainchan/lainchan) edited to suit my needs, 
+it relies on Lainchan's downstream for updates, as such 
+you should probably use that instead of this. Unless, of course, you want to use this for some reason.
 
 Requirements
 ------------
@@ -16,9 +16,9 @@ Requirements
 4.	[PHP GD](http://www.php.net/manual/en/intro.image.php)
 5.	[PHP PDO](http://www.php.net/manual/en/intro.pdo.php)
 
-We try to make sure lainchan is compatible with all major web servers and
+This is a fork of Lainchan, and they try to make sure it is compatible with all major web servers and
 operating systems. lainchan does not include an Apache ```.htaccess``` file nor does
-it need one.
+it need one. Neither does this.
 
 ### Recommended
 1.	MySQL/MariaDB server >= 5.5.3
@@ -29,25 +29,26 @@ it need one.
 
 Contributing
 ------------
-You can contribute to lainchan by:
+You can contribute to madochan by:
+*	Contributing to [Lainchan](https://github.com/lainchan/lainchan) instead
 *	Developing patches/improvements/translations and using GitHub to submit pull requests
 *	Providing feedback and suggestions
 *	Writing/editing documentation
 
-If you need help developing a patch, please join our IRC channel. 
+<!--If you need help developing a patch, please join our IRC channel. 
 
-> irc.lainchan.org:6697 @ #thecage
+> irc.lainchan.org:6697 @ #thecage -->
 
 Installation
 -------------
 1.	Download and extract lainchan to your web directory or get the latest
 	development version with:
 
-        git clone git://github.com/lainchan/lainchan.git
+        git clone git://github.com/MadoFrog/madochan.git
 	
 2.	Navigate to ```install.php``` in your web browser and follow the
 	prompts.
-3.	lainchan should now be installed. Log in to ```mod.php``` with the
+3.	madochan should now be installed. Log in to ```mod.php``` with the
 	default username and password combination: **admin / password**.
 
 Please remember to change the administrator account password.
@@ -95,29 +96,31 @@ at the power users. You won't be able to run these from shared hosting accounts
 
 Localisation
 ------------
-Wanting to have lainchan in your language? You can contribute your translations to vichan at this URL:
+Wanting to have Madochan in your language? You can contribute your translations to vichan at this URL:
 
 https://www.transifex.com/projects/p/tinyboard-vichan-devel/
 
 Oekaki
 ------
-lainchan makes use of [wPaint](https://github.com/websanova/wPaint) for oekaki. After you pull the repository, however, you will need to download wPaint separately using git's `submodule` feature. Use the following commands:
+The big difference between Madochan and Lainchan will be that it uses [PaintBBS NEO](https://github.com/funige/neo/) for oekaki. 
+This doesn't work yet.
+<!--After you pull the repository, however, you will need to download wPaint separately using git's `submodule` feature. Use the following commands:
 
 ```
 git submodule init
 git submodule update
 ```
 
-To enable oekaki, add all the scripts listed in `js/wpaint.js` to your `instance-config.php`.
+To enable oekaki, add all the scripts listed in `js/wpaint.js` to your `instance-config.php`. -->
 
 WebM support
 ------------
 Read `inc/lib/webm/README.md` for information about enabling webm.
 
-lainchan API
+Madochan API
 ----------
 lainchan provides by default a 4chan-compatible JSON API, just like vichan. For documentation on this, see:
-https://github.com/vichan-devel/vichan-API/ .
+https://github.com/vichan-devel/vichan-API/ . This is subject to change.
 
 License
 --------
