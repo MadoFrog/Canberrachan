@@ -2,3 +2,6 @@
 	path = inc/lib/parsedown
 	url = https://github.com/vichan-devel/parsedown
 	branch = master
+[submodule "js/Neo"]
+	path = js/Neo
+	url = https://github.com/funige/neo.git
