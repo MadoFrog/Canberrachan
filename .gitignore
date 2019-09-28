@@ -65,7 +65,7 @@ random/
 
 # Banners
 banners/*
-!banners/lain-bottom.png
+!banners/banner1.png
 
 #Fonts
 stylesheets/fonts
