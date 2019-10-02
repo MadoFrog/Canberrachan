@@ -264,6 +264,9 @@ function loadConfig() {
 		if (in_array('webm', $config['allowed_ext_files']) ||
         	    in_array('mp4',  $config['allowed_ext_files']))
 			event_handler('post', 'postHandler');
+
+		if ($config['allow_fortunes'])
+			event_handler('post', 'fortune'); 
 	}
 	// Effectful config processing below:
 
@@ -2867,5 +2870,15 @@ function strategy_first($fun, $array) {
 		return array('build_on_load');
 	case 'sb_ukko':
 		return array('defer');
+	}
+
+//fortune
+function fortune($post) {
+	if($post->email == 'fortune') {
+	$fortunes = array('Reply hazy, try again', 'Excellent Luck', 'Good Luck', 'Average Luck', 'Bad Luck', 'Good news will come to you by mail', '（　´_ゝ`）ﾌｰﾝ', 'ｷﾀ━━━━━━(ﾟ∀ﾟ)━━━━━━ !!!!', 'You will meet a dark handsome stranger', 'Better not tell you now', 'Outlook good', 'Very Bad Luck', 'Godly Luck');
+	$fcolours = array('#F51C6A', '#FD4D32', '#E7890C', '#BAC200', '#7FEC11', '#43FD3B', '#16F174', '#00CBB0', '#0893E1', '#2A56FB', '6023F8', '9D05DA', '#D302A7');
+	$random = rand(0,12);
+	// Append the result to the post body
+	$post->body = $post->body . '<p><br><b><font color="'.$fcolours[$random].'">Your fortune: '.$fortunes[$random].'</font></b></p>';
 	}
 }
