@@ -23,13 +23,11 @@
 			<img alt="header" class="lain_banner" src="static/lainchan_header_console.gif"/>
 		</center>
 	</header>
-<br>
 
-     <div class="ban" id="global2">      <h2>Madoekai</h2>  Lurk, read the <a href="https://madochan.moe/rules">rules</a>, and get acquainted with PaintBBS before posting.</div>
-    <br>
-     <div class="ban" id="global3">   
+    <div class="ban" id="global2">      <h2>Madoekai</h2>  <p>Lurk, read the <a href="https://madochan.moe/rules">rules</a>, and get acquainted with PaintBBS before posting.</p></div>
+	<div class="ban" id="global3">   
 			<h2>Latest News</h2>
-		{% if not recent_news %}
+		{% if recent_news|count == 0 %}
 			<p style="text-align:center" class="unimportant">(No news to show.)</p>
 		{% else %}
 			{% for entry in recent_news %}
@@ -46,45 +44,44 @@
 		{% endif %}
 		</div>
 	<div class="ban" id="global">
-		<div class="box left">
-			<h2>Recent Images</h2>
-			<ul>
-				{% for post in recent_images %}
-					<li>
-						<a href="{{ post.link }}">
-							<img src="{{ post.src }}" style="width:{{ post.thumbwidth }}px;height:{{ post.thumbheight }}px" alt="">
-						</a>
-					</li>
-				{% endfor %}
-			</ul>
+		<h2>Latest Drawings</h2>
+		<div style="display: flex; flex-wrap: wrap;">
+			{% for post in recent_images %}
+				<div style="height: 175px; width: 175px; display: inline-flex; align-items: center; justify-content: center;">
+					<a href="{{ post.link }}">
+						<img src="{{ post.src }}" style="max-width:150px; max-height:150px; width:auto; height:auto;" alt="">
+					</a>
+				</div>
+			{% endfor %}
 		</div>
-		<div class="box right">
-			<h2>Latest Posts</h2>
-			<ul>
-				{% for post in recent_posts %}
-					<li>
-						<strong>{{ post.board_name }}</strong>: 
-						<a href="{{ post.link }}">
-							{{ post.snippet }}
-						</a>
-					</li>
-				{% endfor %}
-			</ul>
 	</div>
-		</div>
-		<div class="box right">
-			<h2>Stats</h2>
-			<ul>
-				<li>Total posts: {{ stats.total_posts }}</li>
-				<li>Unique posters: {{ stats.unique_posters }}</li>
-				<li>Active content: {{ stats.active_content|filesize }}</li>
-			</ul>
+	<div class="ban" id="global">
+		<h2>Latest Posts</h2>
+		<table style="border-collapse: separate; border-spacing: 2px;">
+			{% for post in recent_posts %}
+				<tr>
+					<td><a href="{{ post.op }}"> 
+						>>{{ post.op }}:					
+					</a></td>
+					<td><a href="{{ post.link }}">
+						{{ post.snippet }}
+					</a></td>
+				</tr>
+			{% endfor %}
+		</table>
+	</div>
+	<div class="ban" id="global">
+		<h2>Stats</h2>
+		<div style="display: flex; flex-wrap: wrap;">
+			<div style="width:33%; display: inline-flex; justify-content: center;"><p>Total posts: {{ stats.total_posts }}</div>
+			<div style="width:33%; display: inline-flex; justify-content: center;"><p>Unique posters: {{ stats.unique_posters }}</div>
+			<div style="width:33%; display: inline-flex; justify-content: center;"><p>Active content: {{ stats.active_content|filesize }}</div>
 		</div>
 	</div>
 	<div class="footer">
 	<footer>
         <center>
-        	<a href="mailto:admin@madochan.org?Subject=Hello" target="_top">admin@madochan.org</a>
+        	<a href="mailto:madofag@madochan.moe?Subject=Hello" target="_top">madofag@madochan.moe</a>
         </center>
 
 	</footer>

@@ -101,9 +101,10 @@
 			while ($post = $query->fetch(PDO::FETCH_ASSOC)) {
 				openBoard($post['board']);
 				
-				$post['link'] = $config['root'] . $board['dir'] . $config['dir']['res'] . link_for($post) . '#' . $post['id'];
+				$post['op'] = $config['root'] . $board['dir'] . $config['dir']['res'];
+				$post['link'] = $post['op'] . link_for($post) . '#' . $post['id'];
 				if ($post['body'] != "")
-					$post['snippet'] = pm_snippet($post['body'], 30);
+					$post['snippet'] = pm_snippet($post['body'], 80);
 				else
 					$post['snippet'] = "<em>" . _("(no comment)") . "</em>";
 				$post['board_name'] = $board['name'];
