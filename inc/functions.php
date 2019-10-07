@@ -2871,6 +2871,7 @@ function strategy_first($fun, $array) {
 	case 'sb_ukko':
 		return array('defer');
 	}
+}
 
 //fortune
 function fortune($post) {
