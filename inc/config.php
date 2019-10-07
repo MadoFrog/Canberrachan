@@ -614,6 +614,8 @@
 	// Max size for slugs
 	$config['slug_max_size'] = 80;
 
+	// Allow fortunes: an email field of "fortune" will result in a fortune being appended to the post body.
+	$config['allow_fortune'] = false;
 /*
 * ====================
 *  Ban settings
