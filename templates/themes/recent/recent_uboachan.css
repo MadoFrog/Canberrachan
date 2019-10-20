@@ -1,0 +1,113 @@
+body {
+    background: #1C1C1C;
+    color: #AAA;
+    font-family: monospace;
+    font-size: 11px;
+}
+@font-face 
+{
+  font-family: 'lain';
+  src: url('./fonts/nrdyyh.woff') format('woff'),
+       url('./fonts/tojcxo.TTF') format('truetype');
+}
+h1 {
+     font-family: monospace, Arial;
+    font-size: 18pt;
+    text-align: center;
+    letter-spacing: 0px;
+}
+div.title, h1 {
+    color: #B03030;
+    font-family: lain, Helvetica, sans-serif;
+}
+header div.subtitle {
+color: #B03030;
+text-align: center;
+}
+div.title p {
+    font-size: 13px;
+}
+a:link, a:visited, p.intro a.email span.name {
+    color: #8080E0;
+}
+a:link:hover, a:visited:hover {
+    color: #f33;
+}
+/*@import url("/stylesheets/dark.css");
+body {
+    color: #CCCCCC;
+    background: #1E1E1E;
+}
+
+header div.subtitle, h1 {
+    color: #32DD72;
+}
+*/
+
+/*a:link, a:visited, p.intro a.email span.name {
+        color: #CCCCCC;
+        text-decoration: none;
+        font-family: sans-serif;
+	transition: text-shadow 0.15s ease 0s color 0.15s ease 0s;
+}*/
+/*a:link:hover, a:visited:hover {
+	color: #32DD72;
+        font-family: sans-serif;
+        text-decoration: none;
+	text-shadow: 0px 0px 5px #FFF;
+}
+*/ 
+.box-wrap {
+        max-width: 670px;
+        min-width: 332px;
+        margin: 0px auto 30px auto;
+        overflow: auto;
+        padding: 0;
+}
+.box {
+        background: transparent;
+        border: 1px solid #383838;
+        width: 330px;
+        margin: 8px 0 0 0;
+        padding: 0;
+	-webkit-border-radius: 2px;
+        -khtml-border-radius: 2px;
+        -moz-border-radius: 2px;
+	-o-border-radius: 2px;
+	-ms-border-radius: 2px;
+        border-radius: 2px;
+}
+.box ul {
+        padding: 2px 15px;;
+}
+.box ul li {
+        list-style: none;
+        margin: 0;
+}
+
+.box.left {
+        float: left;
+}
+.box.left ul {
+	text-align: center;
+}
+.box.right {
+        float: right;
+}
+h2 {
+	color: #B03030;
+}
+.box img {
+        float: none;
+	box-sizing: border-box;
+
+}
+.box li:not(:nth-child(1)) img {
+	margin-top: 12px;
+}
+
+.bar.top {
+	text-align: center;
+	top: 0px;
+	border-bottom: 1px solid #383838;
+  }
