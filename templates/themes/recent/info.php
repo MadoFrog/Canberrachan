@@ -28,7 +28,7 @@
 		'title' => '# of recent images',
 		'name' => 'limit_images',
 		'type' => 'text',
-		'default' => '3',
+		'default' => '8',
 		'comment' => '(maximum images to display)'
 	);
 	
