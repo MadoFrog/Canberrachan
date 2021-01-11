@@ -7,7 +7,7 @@
  *
  * Usage:
  *   $config['additional_javascript'][] = 'js/jquery.min.js';
- *   //$config['additional_javascript'][] = 'js/wpaint.js';
+ *   //$config['additional_javascript'][] = 'js/neo.js';
  *   $config['additional_javascript'][] = 'js/upload-selection.js';
  *                                                  
  */
