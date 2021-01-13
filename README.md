@@ -1,9 +1,9 @@
-Madochan - A fork of Lainchan
+Canberrachan - A fork of Lainchan
 ========================================================
 
 About
 ------------
-Madochan is a fork of [Lainchan](https://github.com/lainchan/lainchan) edited to suit my needs, 
+Canberrachan is a fork of [Lainchan](https://github.com/lainchan/lainchan) edited to suit my needs, 
 it relies on Lainchan's downstream for updates, as such 
 you should probably use that instead of this. Unless, of course, you want to use this for some reason.
 
@@ -29,7 +29,7 @@ it need one. Neither does this.
 
 Contributing
 ------------
-You can contribute to madochan by:
+You can contribute to Canberrachan by:
 *	Contributing to [Lainchan](https://github.com/lainchan/lainchan) instead
 *	Developing patches/improvements/translations and using GitHub to submit pull requests
 *	Providing feedback and suggestions
@@ -44,11 +44,11 @@ Installation
 1.	Download and extract lainchan to your web directory or get the latest
 	development version with:
 
-        git clone git://github.com/MadoFrog/madochan.git
+        git clone git://github.com/MadoFrog/Canberrachan.git
 	
 2.	Navigate to ```install.php``` in your web browser and follow the
 	prompts.
-3.	madochan should now be installed. Log in to ```mod.php``` with the
+3.	Canberrachan should now be installed. Log in to ```mod.php``` with the
 	default username and password combination: **admin / password**.
 
 Please remember to change the administrator account password.
@@ -96,13 +96,13 @@ at the power users. You won't be able to run these from shared hosting accounts
 
 Localisation
 ------------
-Wanting to have Madochan in your language? You can contribute your translations to vichan at this URL:
+Wanting to have Canberrachan in your language? You can contribute your translations to vichan at this URL:
 
 https://www.transifex.com/projects/p/tinyboard-vichan-devel/
 
 Oekaki
 ------
-The big difference between Madochan and Lainchan will be that it uses [PaintBBS NEO](https://github.com/funige/neo/) for oekaki. 
+The big difference between Canberrachan and Lainchan will be that it uses [PaintBBS NEO](https://github.com/funige/neo/) for oekaki. 
 This doesn't work yet.
 <!--After you pull the repository, however, you will need to download wPaint separately using git's `submodule` feature. Use the following commands:
 
@@ -117,7 +117,7 @@ WebM support
 ------------
 Read `inc/lib/webm/README.md` for information about enabling webm.
 
-Madochan API
+Canberrachan API
 ----------
 lainchan provides by default a 4chan-compatible JSON API, just like vichan. For documentation on this, see:
 https://github.com/vichan-devel/vichan-API/ . This is subject to change.
