@@ -20,11 +20,11 @@
 
 	<header>
 		<center>
-			<img alt="header" class="lain_banner" src="static/lainchan_header_console.gif"/>
+			<img alt="header" class="lain_banner" src="static/canberrachan.png"/>
 		</center>
 	</header>
 
-    <div class="ban" id="global2">      <h2>Madoekai</h2>  <p>Lurk, read the <a href="https://madochan.moe/rules">rules</a>, and get acquainted with PaintBBS before posting.</p></div>
+    <div class="ban" id="global2">      <h2>What is Canberrachan?</h2>  <p>Canberrachan is an Animal Crossing imagebaord where anyone can post comments and share images. Users do not need to register an account before participating in the community.</p>  <p>Please read the <a href="https://canberrachan.org/rules">rules</a> and get a feel of the site before posting!</p></div>
 	<div class="ban" id="global3">   
 			<h2>Latest News</h2>
 		{% if not recent_news %}
@@ -44,7 +44,7 @@
 		{% endif %}
 		</div>
 	<div class="ban" id="global">
-		<h2>Latest Drawings</h2>
+		<h2>Latest Images</h2>
 		<div style="display: flex; flex-wrap: wrap;">
 			{% for post in recent_images %}
 				<div style="height: 175px; width: 175px; display: inline-flex; align-items: center; justify-content: center;">
@@ -60,9 +60,9 @@
 		<table style="border-collapse: separate; border-spacing: 2px;">
 			{% for post in recent_posts %}
 				<tr>
-					<td style="width: 100px;"><a href="{{ post.op }}"> 
-						>>{{ post.op }}:					
-					</a></td>
+					<td style="width: 100px;"><a href="{{ post.op }}{% if not post.thread %}{{ post.id }}{% else %}{{ post.thread }}{% endif %}.html"> 
+						>>/{{ post.board }}/{% if not post.thread %}{{ post.id }}{% else %}{{ post.thread }}{% endif %}
+					</a>:</td>
 					<td><a href="{{ post.link }}">
 						{{ post.snippet }}
 					</a></td>
@@ -81,7 +81,7 @@
 	<div class="footer">
 	<footer>
         <center>
-        	<a href="mailto:madofag@madochan.moe?Subject=Hello" target="_top">madofag@madochan.moe</a>
+        	<a href="mailto:madofrog@canberrachan.org?Subject=Why Does Your Website Suck%3F" target="_top">madofrog@canberrachan.org</a>
         </center>
 
 	</footer>
