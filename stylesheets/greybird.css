@@ -1,14 +1,8 @@
 html, body {
     background: #191919;
     color: #9a9a9a;
-    font-family: sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 9pt;
-}
-
-@font-face {
-  font-family: 'lain';
-  src: url('./fonts/nrdyyh.woff') format('woff'),
-       url('./fonts/lain.TTF') format('truetype');
 }
 
 #pagewrap {
@@ -76,7 +70,7 @@ hr {
 }
 
 h1 {
-    font-family: 'lain', tahoma, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     padding: 15px 0 5px 0;
     font-size: 15pt;
     text-align: center;

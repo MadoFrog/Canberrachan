@@ -46,7 +46,7 @@ header h1, header div.subtitle, form table tr th, form table tr td input
 }
 header h1
 {
-	font-family: "lain",sans-serif;
+	font-family: DejaVuSansMono, sans-serif;
 	font-style: normal;
 	font-weight: 400;
 	
