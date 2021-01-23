@@ -43,6 +43,7 @@ html, body {
 div.lain_banner{
     margin:auto;
     position: absolute;
+	max-width: 80%;
 }
 
 
