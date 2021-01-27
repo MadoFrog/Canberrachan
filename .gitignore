@@ -75,3 +75,6 @@ js/twemoji/16x16/
 
 #robots.txt
 robots.txt
+
+#404
+!404.html
